@@ -1,0 +1,14 @@
+.warning{
+    color: #FA1E0E;
+    font-weight: bold;
+}
+
+.success{
+    color: #2ed573;
+    font-weight: bold;
+}
+
+.flashtext{
+    background-color: white;
+    text-align: center;
+}

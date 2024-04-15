@@ -1,0 +1,49 @@
+#productList{
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 96%;
+    margin: 1vh auto 2vh;
+}
+
+#productList td, #productList th{
+    border: 1px solid black;
+    padding: 8px;
+}
+
+#productList tr{
+    background: linear-gradient(to left bottom,
+                                rgba(255, 255, 255, 0.4),
+                                rgba(255, 255, 255, 0.2));
+}
+
+#productList th{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background: linear-gradient(to right bottom,
+                                rgba(255, 255, 255, 0.5),
+                                rgba(255, 255, 255, 0.7));
+}
+
+button{
+    background: linear-gradient(to right top,
+                                rgba(255, 255, 255, 0.9),
+                                rgba(255, 255, 255, 0.7));
+    border: none;
+    border-radius: 2rem;
+    height: 2rem;
+    width: 10vw;
+    margin-left: 4%;
+    padding: 8px 16px;
+    transition: all 0.3s ease;
+}
+
+button:hover{
+    background-color: white;
+    transform: scale(1.2);
+}
+
+h1{
+    margin-top: 2vh;
+    text-align: center;
+}

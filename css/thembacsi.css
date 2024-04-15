@@ -1,0 +1,26 @@
+.main-container{
+    margin: 2vh auto 2vh;
+}
+
+.btn-thembacsi{
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-thembacsi button{
+    background: linear-gradient(to right top,
+                                rgba(255, 255, 255, 0.9),
+                                rgba(255, 255, 255, 0.7));
+    height: 2.4rem;
+    width: 80vw;
+    border: none;
+    border-radius: 2rem;
+    transition: all 0.3s ease;
+}
+
+.btn-thembacsi button:hover{
+    background-color: white;
+    transform: scale(1.1);
+}

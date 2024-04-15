@@ -1,0 +1,137 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.main-container{
+    background: linear-gradient(to left top,
+                                rgba(255, 255, 255, 0.3),
+                                rgba(255, 255, 255, 0.7));
+    height: 45vh;
+    width: 80vw;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border-radius: 2rem;
+}
+
+.header-item{
+    background: linear-gradient(to right bottom,
+                                rgba(255, 255, 255, 0.5),
+                                rgba(255, 255, 255, 0.3));
+    height: 10vh;
+    width: 100%;
+    padding-top: 3.5vh;
+    padding-bottom: 4vh;
+    text-align: center;
+
+    margin-bottom: 2.5%;
+    border-radius: 2rem;
+}
+
+.form-item{
+    height: 45vh;
+    width: 100%;
+}
+
+.form-container{
+    height: 100%;
+    width: 90%;
+    margin: 0% 5%;
+
+    display: flex;
+    flex-direction: column;
+    margin-top: 1vh;
+    overflow: hidden;
+}
+
+.item{
+    height: 3rem;
+    width: 100%;
+    position: relative;
+}
+
+.item input{
+    height: 100%;
+    width: 100%;
+    padding-top: 1.5rem;
+}
+
+.item label{
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+}
+
+.item label::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    bottom: -1px;
+    left: 0%;
+    border-bottom: 3px solid black;
+    transform: translateX(-100%);
+    transition: all 0.3s ease;
+}
+
+.title{
+    position: absolute;
+    bottom: 5px;
+    left: 0%;
+    transition: all 0.3s ease;
+}
+
+.item input:focus + .title-label .title,
+.item input:valid + .title-label .title{
+    transform: translateY(-100%);
+}
+
+.item input:focus + .title-label::after,
+.item input:valid + .title-lable::after{
+    transform: translateX(0);
+}
+
+.navigator-container{
+    height: 8vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.navigator{
+    background: linear-gradient(to right bottom,
+                                rgba(255, 255, 255, 0.3),
+                                rgba(255, 255, 255, 0.7));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+    margin: 2% 0%;
+    height: 60%;
+    width: 46%;
+
+    transition: all 0.3s ease;
+}
+
+.navigator button{
+    background: transparent;
+    border: none;
+    width: 33vw;
+    height: 2.2rem;
+    border-radius: 2rem;
+}
+
+.navigator:hover{
+    font-size: large;
+    background-color: white;
+    width: 50%;
+}

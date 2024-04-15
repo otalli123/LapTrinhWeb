@@ -1,0 +1,28 @@
+button{
+    background: linear-gradient(to right top,
+                                rgba(255, 255, 255, 0.9),
+                                rgba(255, 255, 255, 0.7));
+    height: 2.4rem;
+    width: 80vw;
+    border: none;
+    border-radius: 2rem;
+    transition: all 0.3s ease;
+}
+
+button:hover{
+    background-color: white;
+    transform: scale(1.1);
+}
+
+.hinhanh-container div{
+    display: inline;
+}
+
+.hinhanh img{
+    height: 50px; 
+    width: 50px;
+}
+
+.main-container{
+    margin: 2vh auto 2vh;
+}

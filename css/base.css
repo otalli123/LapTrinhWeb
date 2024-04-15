@@ -1,0 +1,15 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(to right top, #2ed573, #f1f2f6);
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
